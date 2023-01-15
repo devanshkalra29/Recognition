@@ -7,5 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 class RecognitionController {
 
     @GetMapping("/hello")
-    fun hello() = "hello"
+    fun helloWorld() : String {
+        return "HelloWorld"
+    }
 }
