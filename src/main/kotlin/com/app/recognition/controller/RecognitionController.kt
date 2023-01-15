@@ -10,5 +10,4 @@ class RecognitionController {
     fun helloWorld() : String {
         return "HelloWorld"
     }
-
 }

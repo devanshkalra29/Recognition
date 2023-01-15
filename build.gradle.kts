@@ -18,6 +18,7 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.amazonaws:aws-java-sdk:1.11.906")
 	implementation("com.amazonaws:aws-java-sdk-rekognition:1.11.906")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.3")
