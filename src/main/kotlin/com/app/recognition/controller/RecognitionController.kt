@@ -1,4 +1,4 @@
-package com.app.recognition
+package com.app.recognition.controller
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
