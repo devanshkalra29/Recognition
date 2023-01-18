@@ -1,15 +1,15 @@
 package com.app.recognition
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.context.annotation.ComponentScan
-import org.springframework.context.annotation.Configuration
 
 @SpringBootApplication
-@ComponentScan( basePackages = ["com.app.recognition"] )
 class RecognitionApplication
 
 fun main(args: Array<String>) {
+	val log: Logger = LoggerFactory.getLogger(RecognitionApplication::class.java)
 	runApplication<RecognitionApplication>(*args)
+	log.info("We have started")
 }
