@@ -2,10 +2,12 @@ package com.app.recognition
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
+@EnableAutoConfiguration
 class RecognitionApplication
 
 fun main(args: Array<String>) {
