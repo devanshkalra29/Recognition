@@ -6,7 +6,7 @@ import com.amazonaws.regions.Regions
 import com.amazonaws.services.rekognition.AmazonRekognitionClientBuilder
 import com.amazonaws.services.rekognition.model.DetectLabelsRequest
 import com.amazonaws.services.rekognition.model.Image
-import com.app.recognition.controller.S3Controller
+import com.app.recognition.controller.RekognitionController
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value
@@ -19,7 +19,7 @@ class RekognitionService(
     @Value("\${aws.credentials.accessKey}") val accessKey: String,
     @Value("\${aws.credentials.secretKey}") val secretKey: String,
 ) {
-    private val log: Logger = LoggerFactory.getLogger(S3Controller::class.java)
+    private val log: Logger = LoggerFactory.getLogger(RekognitionController::class.java)
     fun detectLabels(fileName: String) =
         try {
             log.info("starting upload process")
