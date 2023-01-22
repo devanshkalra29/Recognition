@@ -11,6 +11,8 @@ group = "com.starter"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
+val awsVersion = "1.12.386"
+
 configurations {
 	compileOnly {
 		extendsFrom(configurations.annotationProcessor.get())
@@ -27,8 +29,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
-	implementation("com.amazonaws:aws-java-sdk:1.12.386")
-	implementation("com.amazonaws:aws-java-sdk-rekognition:1.12.386")
+	implementation("com.amazonaws:aws-java-sdk:${awsVersion}")
+	implementation("com.amazonaws:aws-java-sdk-rekognition:${awsVersion}")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
