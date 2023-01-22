@@ -29,7 +29,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
-	implementation("com.amazonaws:aws-java-sdk-s3:1.11.831")
+	implementation("com.amazonaws:aws-java-sdk-s3:${awsVersion}")
 	implementation("com.amazonaws:aws-java-sdk:${awsVersion}")
 	implementation("com.amazonaws:aws-java-sdk-rekognition:${awsVersion}")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
